@@ -29,10 +29,12 @@ Fluxo do funil: recusar U1 → DW1 → recusar → U2 → DW2 → U3 → DW3 →
 ## Deploy (Cloudflare Workers)
 
 ```bash
-bun install
-bun run build
-cd .output/server && npx wrangler deploy   # worker: artkids-ofertas
+bash scripts/deploy-cloudflare.sh   # worker: artkids-ofertas
 ```
+
+IMPORTANTE: os assets das ofertas são relocados pelo script para `/banners/_a/`
+para não colidir com `/assets/*` da oferta principal. NUNCA criar rotas
+`/assets*`, `/favicon.ico` ou `/robots.txt` apontando para este worker.
 
 Rotas da zona `idealizandoinfo.site` que apontam para o worker `artkids-ofertas`
 (criadas via API; não sobrescrevem a oferta principal):
