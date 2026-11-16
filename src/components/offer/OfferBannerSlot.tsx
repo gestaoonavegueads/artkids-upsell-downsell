@@ -14,7 +14,7 @@ export function OfferBannerSlot({ id, alt }: { id: MockupKind; alt: string }) {
       </div>
       <div className="md:hidden">
         {mobileImage ? (
-          <img src={mobileImage} alt={alt} className="block aspect-[4/5] w-full rounded-3xl object-cover shadow-soft" />
+          <img src={mobileImage} alt={alt} className="block h-[44vh] w-full rounded-3xl object-cover object-top shadow-soft sm:h-[50vh]" />
         ) : (
           <Mockup kind={id} />
         )}
