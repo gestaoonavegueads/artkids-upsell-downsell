@@ -7,7 +7,7 @@ export function OfferPage({ offer }: { offer: Offer }) {
     <main className="min-h-screen bg-background px-4 py-8 md:py-14">
       <div className="mx-auto max-w-3xl">
         <div className="mb-6 flex justify-center">
-          <span className="rounded-full bg-brand-sun px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-ink">⚠️ Não feche esta página — oferta exclusiva</span>
+          <span className="rounded-full bg-brand-sun px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-brand-ink">⚠️ Não feche esta página, oferta exclusiva</span>
         </div>
         <div className="mb-8 md:mb-10"><OfferBannerSlot id={offer.kind} alt={offer.title} /></div>
         <h1 className="text-center text-3xl font-extrabold leading-tight text-brand-ink md:text-5xl">{offer.headline}</h1>

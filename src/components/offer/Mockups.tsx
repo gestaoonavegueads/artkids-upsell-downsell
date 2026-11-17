@@ -133,7 +133,7 @@ function D2() {
 function U3() {
   const months = [["Jan", "Volta às aulas", "bg-brand-sky"], ["Fev", "Novas escolas", "bg-brand-mint"], ["Mar", "Bullying", "bg-brand-coral"], ["Dez", "Natal", "bg-brand-sun"]];
   return (
-    <Frame bg="bg-brand-teal/25" label="Assinatura VIP" title="Clube ArtKids — 15 atividades novas todo mês">
+    <Frame bg="bg-brand-teal/25" label="Assinatura VIP" title="Clube ArtKids: 15 atividades novas todo mês">
       <div className="w-full max-w-md rounded-2xl bg-card p-4 shadow-soft">
         <div className="mb-3 flex items-center gap-2">
           {["bg-brand-coral", "bg-brand-sun", "bg-brand-mint"].map((c) => <span key={c} className={`h-3 w-3 rounded-full ${c}`} />)}

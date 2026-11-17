@@ -6,9 +6,9 @@ const o = offers.d3;
 export const Route = createFileRoute("/dw3")({
   head: () => ({
     meta: [
-      { title: `${o.title} — ArtKids` },
+      { title: `${o.title}: ArtKids` },
       { name: "description", content: o.sub },
-      { property: "og:title", content: `${o.title} — ArtKids` },
+      { property: "og:title", content: `${o.title}: ArtKids` },
       { property: "og:description", content: o.sub },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
